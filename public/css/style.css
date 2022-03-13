@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.rootContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.rootContainer .rootLeftImage{
+    padding: .9rem .3rem;
+    position: relative;
+}
+.rootContainer .rootRight{
+    padding: .9rem .8rem;
+    position: relative;
+  
+}
+.rootContainer .rootRight .headingFour{
+    font-size: 2.4rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rootContainer .rootRight .btn:hover{
+    background-color: red;
+    color: balck;
+    box-shadow:0px 4px beige;
+    cursor: pointer;
+}
+@media (min-width:300px) and (max-width:768px) {
+    .rootContainer{
+        flex-direction: column;
+        overflow-y: scroll;
+        padding: .5rem .2rem;
+        height: auto;
+    }
+    .rootContainer .rootLeftImage{
+        width: 96%;
+        margin: auto;
+        min-height: 400px;
+    }
+    .rootContainer .rootLeftImage .imageOne{
+        width: 100%;
+      
+    }
+    .rootContainer .rootRight{
+        width: 97%;
+        margin: auto;
+    }
+    .rootContainer .rootRight .headingFour{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+@media (min-width: 769px) and (max-width: 1180px){
+    .rootContainer{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: .6rem 1.2rem;
+    }
+    .rootContainer .rootLeftImage{
+        width: 50%;
+        min-height: 350px;
+    }
+    .rootContainer .rootLeftImage .imageOne{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .rootContainer .rootRight{
+        width: 50%;
+    }
+    .rootContainer .rootRight .headingFour{
+        font-size: 2.1rem;
+    }
+}
